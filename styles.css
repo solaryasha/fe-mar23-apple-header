@@ -1,0 +1,53 @@
+:root {
+  --header-height: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0
+}
+
+.header {
+  background-color: rgba(22, 22, 23, .8);
+  color: white;
+  text-align: center;
+
+  position: sticky;
+  top: 0;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+
+  margin: 0 10px;
+
+  padding: 10px;
+
+  display: inline-block;
+
+  transition: color 0.3s ease-in-out;
+}
+
+.header__link:hover {
+  color: aqua;
+}
