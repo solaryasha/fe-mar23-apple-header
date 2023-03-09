@@ -17,12 +17,22 @@ body {
 
 /* #region Header */
 .header {
-  background-color: rgba(22, 22, 23, .8);
-  backdrop-filter: saturate(1.8) blur(20px);
-  color: white;
+  display: flex;
+  justify-content: space-between;
 
   position: sticky;
   top: 0;
+
+  padding: 0 16px;
+
+  background-color: rgba(22, 22, 23, .8);
+  backdrop-filter: saturate(1.8) blur(20px);
+  color: white;
+}
+
+.header__logo {
+  color: inherit;
+  height: 48px
 }
 
 .nav__list {
