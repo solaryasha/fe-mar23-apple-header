@@ -15,10 +15,11 @@ body {
   margin: 0
 }
 
+/* #region Header */
 .header {
   background-color: rgba(22, 22, 23, .8);
+  backdrop-filter: saturate(1.8) blur(20px);
   color: white;
-  text-align: center;
 
   position: sticky;
   top: 0;
@@ -28,10 +29,9 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.nav__item {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .nav__link {
@@ -50,4 +50,24 @@ body {
 
 .header__link:hover {
   color: aqua;
+}
+
+/* #endregion */
+.main  {
+  background-color: antiquewhite;
+
+  padding: 10px 20px;
+
+  /* border: 1px solid transparent; */
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 500px;
+  background: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+
+  text-align: center;
 }
