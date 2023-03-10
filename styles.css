@@ -17,8 +17,8 @@ body {
 
 /* #region Header */
 .header {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 
   position: sticky;
   top: 0;
@@ -35,13 +35,46 @@ body {
   height: 48px
 }
 
+.nav__toggler {
+  display: none;
+}
+
+.nav__toggler-label::before {
+  content: '=';
+}
+
+.nav__toggler:checked + .nav__toggler-label::before {
+  content: 'x'
+}
+
+.nav__toggler:checked ~ .nav__list {
+  max-height: 100vh;
+}
+
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
+
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+  .nav__list {
+    max-height: 100%;
+    flex-direction: row;
+  }
+
+  .nav__toggler-label  {
+    display: none;
+  }
 }
 
 .nav__link {
