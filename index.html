@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <header class="header">
-      <!-- <a href="http://apple.com" class="header__logo">
+    <header class="header page__header">
+      <a href="http://apple.com" class="header__logo">
         <svg 
           height="48" 
           viewBox="0 0 17 48" 
@@ -20,15 +20,15 @@
          fill="currentColor"
          ></path>
         </svg>
-      </a> -->
-      <nav class="nav">
+      </a>
+      <nav class="nav nav--active">
         <input 
           type="checkbox" 
           name="nav-checkbox" 
           id="nav-checkbox" 
           class="nav__toggler"
         >
-        <label for="nav-checkbox" class="nav__toggler-label"></label>
+        <label for="nav-checkbox" class="nav__toggler-label "></label>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#store" class="nav__link">Store</a>
