@@ -1,0 +1,57 @@
+.nav {
+  &__toggler {
+    display: none;
+  }
+
+  &__toggler-label {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__toggler-label::before {
+    content: '=';
+  }
+
+  &__toggler:checked + &__toggler-label::before {
+    content: 'x'
+  }
+
+  &__toggler:checked ~ &__list {
+    max-height: 100vh;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    max-height: 0;
+    overflow: hidden;
+  
+    transition: max-height 0.3s ease-in-out;
+
+    @include onDesktop {
+      max-height: 100%;
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  
+    margin: 0 10px;
+  
+    padding: 10px;
+  
+    display: inline-block;
+  
+    transition: color 0.3s ease-in-out;
+  }
+}
