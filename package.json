@@ -1,0 +1,24 @@
+{
+  "name": "css-lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solaryasha/fe-mar23-apple-header.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solaryasha/fe-mar23-apple-header/issues"
+  },
+  "homepage": "https://github.com/solaryasha/fe-mar23-apple-header#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
